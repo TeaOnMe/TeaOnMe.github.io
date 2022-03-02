@@ -48,7 +48,7 @@ social:
   #forumbee:
   #tripadvisor:
   #amazon:
-
+  #Discord:
 # Build settings
 markdown: kramdown
 #sass:
