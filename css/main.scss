@@ -1859,7 +1859,7 @@ $baseurl: '{{ site.baseurl }}/images';
 #Arrows{
 	display: flex;
 	justify-content: space-between;
-	height: 30px;
+	height: 70px;
 	position: absolute;
 	width: 600px;
 }
@@ -1869,7 +1869,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	color: #1C1D21;
 	cursor: pointer;
 	height: 20px;
-	padding: 45px;
+	padding: 35px;
 
 	transition: background-color .5s, color .5s;
 }
