@@ -1868,18 +1868,18 @@ $baseurl: '{{ site.baseurl }}/images';
 	background-color: rgba(255, 255, 255, .25);
 	color: #1C1D21;
 	cursor: pointer;
-	height: 30px;
+	height: 20px;
 	padding: 30px;
 
 	transition: background-color .5s, color .5s;
 }
 
 #Arrows i:first-of-type{ 
-	padding-right: 30px;
+	padding-right: 20px;
 }
 
 #Arrows i:last-of-type{ 
-	padding-left: 30px;
+	padding-left: 20px;
 }
 
 #Arrows i:hover{
