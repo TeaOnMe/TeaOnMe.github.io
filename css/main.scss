@@ -1837,6 +1837,7 @@ $baseurl: '{{ site.baseurl }}/images';
 #Slideshow{
 	align-items: center;
 	justify-content: center;
+	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 	position: relative;
