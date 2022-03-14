@@ -1834,54 +1834,83 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 
-#Slideshow{
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	position: relative;
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-#Slider{
-	border: 20px solid #1C1D21;
-	height: 300px;
-	overflow: hidden;
-	width: 600px;
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
 }
-
-#Slider img{
-	height: 100px;
-	width: 100px;
-	transition: all 1s;
+.container{
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
-
-#Arrows{
-	display: flex;
-	justify-content: space-between;
-	height: 30px;
-	position: absolute;
-	width: 600px;
+.image-container{
+    position: relative;
+    width: 100%;
 }
-
-#Arrows i{
-	color: #EEEFF7;
-	cursor: pointer;
-	height: 50px;
-	padding: 25px;
-
-	transition: background-color .5s, color .5s;
+img{
+    position: relative;
+    width: 100%;
+    display: none;
 }
-
-#Arrows i:first-of-type{ 
-	padding-right: 20px;
+.active{
+    display: block;
 }
-
-#Arrows i:last-of-type{ 
-	padding-left: 20px;
+.dot-container{
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-
-#Arrows i:hover{
-	background-color: rgba(28,29,33, .75);
-	color: #EEEFF7;
+button{
+    outline: none;
+    cursor: pointer;
+}
+.dot-container button{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid #8052ec;
+    background-color: transparent;
+}
+.dot-container button:nth-child(1){
+    background-color: #8052ec;
+}
+#prev,#next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #8052ec;
+    color: #ffffff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#prev{
+    left: 15px;
+}
+#next{
+    right: 15px;
 }
